@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+    }
+    header {
+        text-align: center;
+    }
+
+    .navbar {
+        background-color: #ee9e35;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    .navbar li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #0022ff;
+        font-weight: bold;
+    }
+
+    .navbar li a:hover {
+        color: black;
+    }
+    img {
+        width: 200px;
+        border-radius: 23px;
+        border: 3px solid #c760c7;
+        display: block;
+        margin: 0 auto;
+    }
+    form {
+        text-align: center;
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    form div {
+        margin: 10px 0;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        font-size: 16px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin: 0 10px;
+    }
+    button {
+        background-color: #ff8c00;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: fantasy;
+    }
+
+    button:hover {
+        background-color: #ff6600;
+    }
+    details {
+        margin: 10px 0;
+        text-align: left;
+    }
+    a {
+        color: #ff0000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #000;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Help</a></li>
+                <div class="search" style="padding: 18px 645px;">
+                    <input style="border-radius: 36px; padding: 5px 200px;" type="text" name="search" id="search" placeholder="How far you will go for love...">
+                </div>
+            </ul>
+        </nav>
+        <br>
+    </header>
+    <header style="margin: auto; width: 13%;">
+        <img src="love.jpg">
+    </header>
+<h1 style="color: #ea3838; text-align:center; font-family: cursive; font-size: 40px; padding: 5px; text-decoration: underline;"><b>Loving Birds</h1>
+<form action="backend.php">
+    <div>
+        Name:<input type="text" name="myName">
+    </div>
+    <br>
+    <div>
+        Age:<input type="number" role="myAge">
+    </div>
+    <br>
+    <div>
+        Date of birth:<input type="date" date="myDate">
+    </div>
+    <br>
+    <div>
+        Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Other<input type="radio" name="myGender">  
+    </div>
+    <br>
+    <div>
+        Have you been in relationship earlier?<input type="checkbox" name="myEligibility"> 
+    </div>
+    <br>
+    <div>
+        Hobby:<input type="text" role="myHobby">
+    </div>
+    <br>
+    <div>
+        <label for="Profession">Profession</label>
+        <select name="myProfession" id="Profession">
+            <option value="Job">Job</option>
+            <option value="Business">Business</option>
+            <option value="Student">Student</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>   
+    <div>
+    <br>Write about yourself.<br><textarea name="text" cols="30" rows="5"></textarea>    
+    </div>
+    <br>
+    <div>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Submit">
+    </div>   
+    <details>
+        <summary>Terms and conditions</summary>
+        Liya hua maal wapas nahi hoga!
+        Aapka din subh ho.
+    </details>
+    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiv9Nn0zaKCAxUlq2YCHfUIDNEYABAAGgJzbQ&ase=2&gclid=CjwKCAjw7oeqBhBwEiwALyHLM28Uftq609mcVpceKmW6mgElUCoDnoh0PHPgq8QjKlT5MeE06SOQvxoCab4QAvD_BwE&ohost=www.google.com&cid=CAESVeD2EMfQMjwTBUqL37GTGLYDzW5UkH35_sGuXMFdRiVJG5jTJ3GPZCn157Nqm774oSUuMSBE8Qx99XLN5xj6Tc-SD9P3eVae6mY7Vqgq_tZ6bCUASOI&sig=AOD64_1wdbvTBXRJzViqJnjbqLZdDsODLA&q&nis=4&adurl&ved=2ahUKEwjimtP0zaKCAxWkfWwGHUIACx0Q0Qx6BAgIEAE" target="_blank" style="text-decoration: underline;">Read More</a>
+    <button style="background-color: orange; cursor: pointer; font-family:fantasy; color: #000; border: 2px solid #000;">
+        Contact us
+    </button>
+</form>
+</div>
+</body>
+</html>
